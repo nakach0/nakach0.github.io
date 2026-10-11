@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trend Viewer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans JP",
+                sans-serif;
+            background: #f5f5f5;
+            color: #111;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .label {
+            font-size: 13px;
+            letter-spacing: 0.15em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: clamp(32px, 7vw, 64px);
+            line-height: 1;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #555;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 16px;
+            background: #111;
+            color: white;
+            border-radius: 999px;
+            font-size: 14px;
+        }
+
+        .features {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .feature {
+            padding: 18px;
+            background: #f7f7f7;
+            border-radius: 12px;
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .feature span {
+            font-size: 13px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 22px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="label">FASHION DATA PROJECT</div>
+
+            <h1>Fashion Trend Viewer</h1>
+
+            <p class="description">
+                メンズ・レディースのファッション商品を分析し、
+                アイテム・シルエット・素材・ブランドなどの変化から
+                ファッショントレンドを可視化するWebサービスを開発しています。
+            </p>
+
+            <div class="status">
+                Currently in Development
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <strong>Trend Analysis</strong>
+                    <span>ファッションアイテムの増減を分析</span>
+                </div>
+
+                <div class="feature">
+                    <strong>Men / Women</strong>
+                    <span>メンズ・レディース両方に対応予定</span>
+                </div>
+
+                <div class="feature">
+                    <strong>Monthly Data</strong>
+                    <span>月別・年別の変化を可視化</span>
+                </div>
+
+                <div class="feature">
+                    <strong>Fashion Features</strong>
+                    <span>シルエット・素材・デザインを分析</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
